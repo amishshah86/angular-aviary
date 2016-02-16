@@ -11,7 +11,10 @@ module.exports = function(grunt) {
       },
       build: {
         options: {
-          sourceMap: true
+          sourceMap: true,
+          mangle: {
+            except: ['Aviary']
+          }
         },
         files: {
           'angular-aviary.min.js': ['angular-aviary.js']
