@@ -145,7 +145,7 @@
   if (typeof define === 'function' && define.amd) {
 		define(['angular', 'Aviary'], ngAviary);
 	} else if (typeof module !== 'undefined' && module && module.exports) {
-		ngAviary(angular, require('Aviary'));
+		ngAviary(require('angular'), require('./lib/aviary'));
 		module.exports = 'ngAviary';
 	} else {
 		ngAviary(angular, (typeof global !== 'undefined' ? global : window).Aviary);
