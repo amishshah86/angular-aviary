@@ -24,6 +24,8 @@
           targetSelector: '@',
           targetSrc: '@',
           onSave: '&',
+          onError: '&',
+          onClose: '&',
           onSaveButtonClicked: '&'
         },
         link: function (scope, element, attrs) {
