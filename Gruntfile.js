@@ -13,7 +13,7 @@ module.exports = function(grunt) {
         options: {
           sourceMap: true,
           mangle: {
-            except: ['Aviary']
+            except: ['Aviary', 'imageID', 'newURL']
           }
         },
         files: {
