@@ -59,13 +59,11 @@
 
           function onSaveButtonClickedCb(imageID) {
             // User onSaveButtonClicked callback
-            console.log('Save Button Clicked: ', imageID);
             (scope.onSaveButtonClicked || angular.noop)({id: imageID});
           }
 
           function onSaveCb(imageID, newURL) {
             // User onSave callback
-            console.log('Save Successful: ', imageID);
             (scope.onSave || angular.noop)({
               id: imageID,
               newURL: newURL
