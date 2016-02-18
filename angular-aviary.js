@@ -87,6 +87,12 @@
               isDirty: isDirty
             });
           }
+
+          scope.$on('$destroy', function () {
+            if(!!featherEditor) {
+              featherEditor.close();
+            }
+          });
         }
       };
     }
