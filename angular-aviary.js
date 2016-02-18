@@ -39,7 +39,6 @@
 
           // Callbacks obj
           var cbs = {
-            onLoad: onLoadCb,
             onSaveButtonClicked: onSaveButtonClickedCb,
             onSave: onSaveCb,
             onError: onErrorCb,
@@ -56,11 +55,6 @@
               url: scope.targetSrc || targetImage.src
             });
             return false;
-          }
-
-          function onLoadCb() {
-            // User onLoad callback
-            (scope.onLoad || angular.noop)();
           }
 
           function onSaveButtonClickedCb(imageID) {
